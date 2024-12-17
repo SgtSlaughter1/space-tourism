@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bgImage {
+    background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+}
+body {
+    overflow-x: hidden;
+}
+
+.dest-content {
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 20px;
+    color: white;
+    /* height: 350px; */
+}
+
+hr {
+    width: 70%;
+}
+
+.row {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.location > p {
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.dest-image > img {
+    width: 90%;
+}
+
+.name > h2 {
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    /* font-family: "Bellefair"; */
+}
+
+.name > p {
+    width: 90%;
+    line-height: 1.5;
+    font-family: "Barlow";
+}
+
+.dist {
+    font-family: "Bellefair";
+}
+
+.location p.active {
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid #fff; 
+}
+
+.dist > p {
+    margin: 0 20px;
+}
+
+p > span  {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.hero {
+    width: 80%;
+    position: relative;
+    top: 5%;
+    left: 10%;
+}
+
+.circle-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #979797;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dest-nav {
+    width: 40%;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+@media (max-width: 769px) {
+
+.bgImage {
+    background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
+    height: 700px;
+}
+
+.dest {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.dest-content {
+    width: 90%;
+    padding: 10px;
+}
+
+.hero{
+    top: 80px;
+}
+
+.name{
+    width: 100%;
+    margin-bottom: 0;
+}
+.name > h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.name > p {
+    width: 100%;
+    font: 5px;
+}
+.location > p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+
+.dist {
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+.dest-image > img {
+    width: 50%;
+}
+
+.circle-btn {
+    width: 15px;
+    height: 15px;
+}
+
+.dest-content {
+    width: 100%;
+}
+
+
+.dest-nav {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+p > span  {
+    font-size: 15px;
+}
+}
