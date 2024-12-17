@@ -10,12 +10,10 @@ body{
     overflow-x: hidden;
 }
 .bgImage {
-    background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+    background: url('../starter-code/assets/home/background-home-desktop.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    height: 100vh; 
-    width: 100vw; 
+    min-height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -99,4 +97,85 @@ body{
 
 .explore-button:hover {
     transform: scale(1.1);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 991px) {
+    .bgImage {
+        background: url('../starter-code/assets/home/background-home-tablet.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #home {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .explore-button {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin: 2rem auto;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    .bgImage {
+        background: url('../starter-code/assets/home/background-home-mobile.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #home {
+        padding: 1rem;
+    }
+
+    .explore-button {
+        width: 120px;
+        height: 120px;
+    }
+
+    .content-wrapper {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 375px) {
+    .explore-button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .bgImage {
+        min-height: 120vh;
+    }
+
+    #home {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .explore-button {
+        margin: 0;
+    }
 }

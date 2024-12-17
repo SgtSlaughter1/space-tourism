@@ -7,7 +7,7 @@ async function fetchDestinations() {
 
     // Create location buttons once
     createLocationButtons(destinations);
-    console.log(destinations)
+
 
     // Initially display content for the first destination (e.g., Moon)
     updateDestinationContent(destinations[0]);

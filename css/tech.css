@@ -8,12 +8,10 @@ body{
     overflow-x: hidden;
 }
 .bgImage {
-    background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+    background: url('../starter-code/assets/technology/background-technology-desktop.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    height: 100vh; 
-    width: 100vw; 
+    min-height: 100vh;
+    width: 100%;
 }
 
 .hero{
@@ -106,6 +104,133 @@ body{
     .circle-btn{
         width: 20px;
         height: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 991px) {
+    .bgImage {
+        background: url('../starter-code/assets/technology/background-technology-tablet.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .hero {
+        left: 5%;
+        width: 90%;
+    }
+
+    .tech {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tech-desc {
+        width: 90%;
+        order: 2;
+    }
+
+    .tech-image {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .tech-image > img {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .circle-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-buttons {
+        order: 3;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    .bgImage {
+        background: url('../starter-code/assets/technology/background-technology-mobile.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .hero {
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .tech-desc > h2 {
+        font-size: 24px;
+    }
+
+    .tech-desc > h3 {
+        font-size: 16px;
+    }
+
+    .tech-desc > p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .circle-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 375px) {
+    .tech-desc > h2 {
+        font-size: 20px;
+    }
+
+    .tech-desc > p {
+        font-size: 14px;
+    }
+
+    .circle-btn {
+        width: 25px;
+        height: 25px;
+        margin: 5px;
+    }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .bgImage {
+        min-height: 120vh;
+    }
+
+    .tech {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .tech-desc {
+        order: 2;
+        text-align: left;
+    }
+
+    .tech-image {
+        order: 3;
+        width: 30%;
+    }
+
+    .tech-buttons {
+        order: 1;
+        flex-direction: column;
+        margin-right: 1rem;
     }
 }
 
